@@ -1,17 +1,19 @@
+
 # build output
-build/
-
-# python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
 # editors / OS
-.vscode/
-.idea/
-.DS_Store
-
 # never commit tenant data
-records/
+# python
+*.pyc
 *.sqlite
+.DS_Store
+.env
+.env.*
+.idea/
+.venv/
+.vscode/
+__pycache__/
+build/
+dist/*.tmp
+node_modules/
+records/
+venv/
