@@ -1,0 +1,130 @@
+/* Small Landlord, Calm Guide — site styles (warm, calm, plain) */
+:root {
+  --ink: #2d2a26;
+  --muted: #6b645c;
+  --paper: #fbf7f1;
+  --card: #ffffff;
+  --accent: #b4552d;
+  --accent-soft: #f3e3d3;
+  --line: #e6ddd0;
+  --ok: #2e6e46;
+  --warn: #a04a2a;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.65;
+  font-size: 17px;
+}
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+h1, h2, h3, h4 {
+  font-family: "Verdana", "Segoe UI", sans-serif;
+  line-height: 1.25;
+  color: var(--ink);
+}
+h1 { font-size: 1.9rem; margin: 0 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 0.7rem; padding-top: 0.4rem; }
+h3 { font-size: 1.08rem; margin: 1.6rem 0 0.5rem; }
+p { margin: 0.7rem 0; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1.1rem;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  color: #5a4a3c;
+}
+blockquote p { margin: 0.3rem 0; }
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.86em;
+  background: #f0e9df;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: #332f2a;
+  color: #f4efe6;
+  padding: 1rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.1rem 0;
+  font-size: 0.92rem;
+}
+th, td { text-align: left; padding: 0.5rem 0.7rem; border-bottom: 1px solid var(--line); }
+th { font-family: "Verdana", sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+tr:nth-child(even) td { background: rgba(255,255,255,0.55); }
+hr { border: none; border-top: 1px solid var(--line); margin: 2.2rem 0; }
+ul li, ol li { margin: 0.35rem 0; }
+ul.task-list { list-style: none; padding-left: 0.2rem; }
+ul.task-list li::before { content: ""; }
+li input[type="checkbox"] { margin-right: 0.5em; transform: translateY(1px); }
+.disclaimer-bar {
+  background: #fdf0e4;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-family: "Verdana", "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: #7a4a2b;
+  margin-bottom: 2rem;
+}
+.topbar {
+  font-family: "Verdana", sans-serif;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+}
+.topbar a { text-decoration: none; }
+.chapters { font-family: "Verdana", sans-serif; font-size: 0.8rem; }
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: "Verdana", sans-serif;
+}
+.toc-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  margin: 1.4rem 0;
+}
+.toc-card h2 { margin: 0 0 0.7rem; }
+.prevnext {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  font-family: "Verdana", sans-serif;
+  font-size: 0.9rem;
+}
+.hero {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-top: -0.4rem;
+}
